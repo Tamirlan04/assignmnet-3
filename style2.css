@@ -42,27 +42,24 @@ img{
 }
 .menu a:hover{background:rgba(255,255,255,.16); transform:translateY(-1px)}
 
-/* Layout */
-/* Center the whole strip */
 .page { 
   padding: 28px 16px;
   display: flex;
-  justify-content: center;   /* centers the .cards block itself */
+  justify-content: center;   
 }
 
-/* Put cards in one centered row */
 .cards {
   display: flex;
-  justify-content: center;   /* center the row */
+  justify-content: center;   
   align-items: flex-start;
-  gap: 28px;                  /* space between cards */
-  flex-wrap: wrap;            /* lets them wrap on small screens */
-  max-width: 1200px;          /* optional: keeps line length reasonable */
+  gap: 28px;                  
+  flex-wrap: wrap;            
+  max-width: 1200px;          
   width: 100%;
 }
 
 .card {
-  width: 320px;               /* 300–360px also works */
+  width: 320px;               
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 8px 24px rgba(16,24,40,.08);
@@ -73,9 +70,8 @@ img{
 
 .card__media img{
   width: 100%;
-  height: auto;          /* высота подстраивается под картинку */
-  /* убираем aspect-ratio */
-  object-fit: cover;     /* можно оставить/убрать, если не нужно обрезание */
+  height: auto;          
+  object-fit: cover;    
 }
 
 
@@ -98,13 +94,11 @@ img{
   color: var(--muted);
 }
 
-/* Footer */
 .card__footer {
   padding: 0 20px 22px;
   display: flex;
   justify-content: center;
 }
-/* FOOTER */
 .site-footer{
   background: var(--nav);
   color: #d1d5db;
@@ -128,7 +122,6 @@ img{
 .btn:hover { background: var(--primary-pressed); }
 .btn:active { transform: translateY(1px); }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .cards { grid-template-columns: repeat(2, minmax(240px, 1fr)); }
 }
