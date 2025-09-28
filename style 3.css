@@ -15,7 +15,7 @@ html,body{ height: 100%; }
 body{
   margin: 0;
   display: grid;
-  grid-template-rows: auto 1fr auto; /* sticky footer */
+  grid-template-rows: auto 1fr auto; 
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -24,7 +24,6 @@ img{
     width: 50px;
     height: 50px
 }
-/* NAVBAR */
 .nav{
   background: var(--nav);
   color: #fff;
@@ -46,13 +45,12 @@ img{
 }
 .links a:hover{ color:#ffffff; }
 
-/* LAYOUT */
 .wrap{
   max-width: 1200px;
   margin: 16px auto 24px;
   padding: 0 16px;
   display: grid;
-  grid-template-columns: 1.3fr .8fr; /* left wide, right narrow */
+  grid-template-columns: 1.3fr .8fr; 
   gap: 24px;
 }
 
@@ -90,7 +88,6 @@ img{
 .btn:hover{ background: var(--primary-pressed); }
 .btn:active{ transform: translateY(1px); }
 
-/* SIDEBAR */
 .sidebar{
   background: #eceff3;
   border-radius: var(--radius);
@@ -99,7 +96,6 @@ img{
 }
 .sidebar h3{ margin: 4px 0 10px; }
 
-/* FOOTER */
 .site-footer{
   background: var(--nav);
   color: #d1d5db;
@@ -108,7 +104,6 @@ img{
   font-size: 14px;
 }
 
-/* RESPONSIVE (works without meta viewport too, just less perfect on phones) */
 @media (max-width: 960px){
   .wrap{ grid-template-columns: 1fr; }
   .sidebar{ order: 2; }
